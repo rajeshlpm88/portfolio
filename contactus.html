@@ -1,0 +1,77 @@
+<!-- contactus.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for contact form */
+        .contact-form {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 15px;
+        }
+
+        .contact-form .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form .submit-btn {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form .submit-btn:hover {
+            background: #cf3e0d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="branding">
+            <h1><span class="highlight">My</span> Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li class="current"><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>My Portfolio &copy; 2023</p>
+    </footer>
+</body>
+</html>
